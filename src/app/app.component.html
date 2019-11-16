@@ -1,3 +1,10 @@
-<ng-container *ngFor="let event of events; let i = index">
-  {{ i }} {{ event.subject }}
-</ng-container>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div *ngFor="let event of events">
+        <app-event [value]="event"></app-event>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
