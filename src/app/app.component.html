@@ -1,5 +1,7 @@
 <ul>
-  <li *ngFor="let item of items; let counter = index">
-    {{ counter }} {{ item.subject }}
+  <li *ngFor="let event of events; let i = index">
+    <div class="someClass">
+     <h3>{{ i }} {{ event.subject }} </h3>
+    </div>
   </li>
 </ul>
