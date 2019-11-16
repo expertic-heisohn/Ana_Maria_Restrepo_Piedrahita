@@ -1,7 +1,3 @@
-<ul>
-  <li *ngFor="let event of events; let i = index">
-    <div class="someClass">
-     <h3>{{ i }} {{ event.subject }} </h3>
-    </div>
-  </li>
-</ul>
+<ng-container *ngFor="let event of events; let i = index">
+  {{ i }} {{ event.subject }}
+</ng-container>
