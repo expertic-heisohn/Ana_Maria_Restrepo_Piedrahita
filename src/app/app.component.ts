@@ -8,6 +8,7 @@ import {ModalDirective} from 'angular-bootstrap-md';
 })
 export class AppComponent {
   @ViewChild(ModalDirective) modal: ModalDirective;
+  name: string = '';
   
   events: Array<any> = [
     {time: '08:00', subject: 'Breakfast with Simon', location: 'Lounge Caffe', description: 'Discuss Q3 targets'},
